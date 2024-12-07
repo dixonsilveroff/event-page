@@ -4,6 +4,7 @@
   box-sizing: border-box;
   transition: all 100ms linear;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  flex: 1;
 }
 body {
   background-color: whitesmoke;
@@ -16,11 +17,11 @@ a {
 }
 a:hover,
 a:focus-visible {
-   opacity: 100%;
+  opacity: 100%;
   border-bottom: 1px solid black;
 }
-a:active {
-  
+h1 {
+  font-size: xx-large;
 }
 header {
   display: flex;
@@ -38,22 +39,72 @@ header {
 }
 nav {
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
 }
 main {
   margin-top: 3rem;
   padding-inline: 3rem;
   display: flex;
   gap: 50px;
+  align-items: flex-start;
+}
+article {
+  margin-block: 1rem;
+  line-height: 1.5rem;
+}
+article.event-intro {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
 div.event-image {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 780px;
 }
 div.event-image > img {
-   width: 580px;
+  width: 780px;
 }
 div.event-details {
-   max-width: 500px;
+  max-width: 580px;
+}
+time.event-time {
+  font-size: 0.85rem;
+}
+span#current-time,
+time.event-date,
+p.event-venue {
+  font-weight: 700;
+}
+p.article-header {
+  opacity: 70%;
+  margin-bottom: 8px;
+}
+p + hr {
+  max-width: 95%;
+  margin-inline: auto;
+  opacity: 70%;
+  margin-bottom: 5px;
+}
+form > input {
+  margin-bottom: 10px;
+}
+form > button {
+  padding: 8px 20px;
+  font-weight: 700;
+  background-color: black;
+  border: none;
+  color: whitesmoke;
+  border-radius: 10px;
+}
+button:hover,
+button:focus-visible {
+  opacity: 80%;
+}
+footer.footer {
+  min-height: 10rem;
+  background-color: #141414;
 }

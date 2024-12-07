@@ -10,7 +10,7 @@
   <body>
     <header>
       <a href="./404.html" class="home-button">NICE-SA Home</a>
-      <span id="current-time-and-date"></span>
+      <span id="current-time"></span>
       <nav>
         <a href="./404.html">
           <p>Discover</p>
@@ -28,18 +28,42 @@
         <img src="./event-flyer.jpg" alt="event-flyer" />
       </div>
       <div class="event-details">
-        <article>
+        <article class="event-intro">
           <h1>Live Webinar by NICE-SA, YABATECH.</h1>
           <h2>Theme: Building Collapse - Causes and Solutions</h2>
-          <time datetime="2024-12-01">Saturday, 7th December</time
-          >&nbsp;&nbsp;<time datetime="1800">9:00 PM - 11.00 PM GMT+1</time>
-          <div>
-            <p>Google Meet</p>
-          </div>
+          <time class="event-date" datetime="2024-12-01"
+            >Saturday, 7th December, 2024</time
+          >
+          <time class="event-time" datetime="1800"
+            >9:00 PM - 11.00 PM GMT+1</time
+          >
+          <p class="event-venue">Google Meet</p>
         </article>
+        <form id="registrationForm">
+          <p class="article-header">Register</p>
+          <hr />
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" required /><br />
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required /><br />
+          <label for="contact">Contact:</label><br />
+          <input type="text" id="contact" name="contact" required /><br />
+          <label for="college">College:</label><br />
+          <input type="text" id="college" name="college" required /><br />
+          <label for="branch">Branch:</label><br />
+          <input type="text" id="branch" name="branch" required /><br />
+          <label for="year">Year:</label><br />
+          <input type="text" id="year" name="year" required /><br />
+          <button type="submit">Register</button>
+        </form>
+        <p id="submissionCounter"></p>
         <article>
+          <p class="article-header">About Event</p>
+          <hr />
           <p>
-            <strong class="strong-text">🚀 Join Our Live Session on Progressive Web Apps!</strong>
+            <strong class="strong-text"
+              >🚀 Join Our Live Session on Progressive Web Apps!</strong
+            >
             <br />
             Hello JavaScript Enthusiasts! We&apos;re excited to host a live
             session in our community, where we&apos;ll deep dive into
@@ -58,7 +82,9 @@
         </article>
       </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+
+    </footer>
 
     <script src="./script.js"></script>
     <noscript>You need JavaScript to go on from here!</noscript>
