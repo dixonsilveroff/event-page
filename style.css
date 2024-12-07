@@ -4,7 +4,7 @@
   box-sizing: border-box;
   transition: all 100ms linear;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  flex: 1;
+  /* flex: 1; */
 }
 body {
   background-color: whitesmoke;
@@ -41,7 +41,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 5rem;
 }
 main {
   margin-top: 3rem;
@@ -74,6 +74,10 @@ div.event-details {
 time.event-time {
   font-size: 0.85rem;
 }
+p#submissionCounter {
+  opacity: 80%;
+  margin-block: 10px;
+}
 span#current-time,
 time.event-date,
 p.event-venue {
@@ -91,6 +95,10 @@ p + hr {
 }
 form > input {
   margin-bottom: 10px;
+  line-height: 1.4rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  max-width: 400px;
 }
 form > button {
   padding: 8px 20px;
@@ -107,4 +115,18 @@ button:focus-visible {
 footer.footer {
   min-height: 10rem;
   background-color: #141414;
+  color: whitesmoke;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p.modal {
+  padding: 5px 10px;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+}
+p.modal-hidden {
+  display: none;
 }
